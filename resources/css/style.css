@@ -1,0 +1,59 @@
+/* Main stylesheet for My Times, project for Codecademy
+   Unit 4, days 9-13
+   J. Stuart Harris
+ */
+
+body {
+  font-family: Verdana;
+  background-color: white;
+  margin: 10px 0;
+}
+
+header {
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+}
+
+/*
+header div span {
+  color: MediumAquamarine;
+}*/
+
+nav {
+}
+
+nav span {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+a {
+  color: black;
+}
+
+hr {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+.logotext {
+  padding: 0 15px;
+  color: MediumAquamarine;
+}
+
+#topmenu {
+  display: inline-flex;
+  align-content: flex-end;
+}
