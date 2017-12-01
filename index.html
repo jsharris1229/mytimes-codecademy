@@ -12,7 +12,6 @@
 
   <body>
     <!-- ***** Header section is top menu bar of website -->
-    <div id="headerbox">
     <header>
       <div> <!-- left side -->
         <img src="resources/images/img-myt-logo.jpg" alt="My Times Logo">
@@ -28,15 +27,14 @@
 
       </nav>
     </header>
-  </div>
 
     <!-- ***** Main section with columns and articles -->
-    <section>
+    <div class="maincontent">
       <!-- Left (large) column -->
       <div class="column large">
-        <article>
-          Mother of Three Buys Tuna Steak at Phish Concert. Leaves, "Feeling Funny."
-        </article>
+        <div class="mainarticle picleader" id="motherphish">
+          <span id="maintitle">Mother of Three Buys Tuna Steak at Phish Concert. Leaves, "Feeling Funny."</span>
+        </div>
         <article>
           <p>
             MONUMENT VALLEY, AZ - Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -53,14 +51,14 @@
           </p>
         </article>
         <article>
-          <h2>Orca Spends Vacation at Land World Puget </h2>
+          <span>Orca Spends Vacation at Land World Puget </span>
           <p>PUGET, SO - Sed felis elit, faucibus et ipsum vel, vehicula ultrices
             purus. Sed congue odio vitae malesuada rhoncus. Integer vitae nisi
             pulvinar ante accumsan...
         </article>
-        <article>
-          Earth Spins Backwards for 2017
-        </article>
+        <div class="picleader" id="earthspins">
+          <span>Earth Spins Backwards for 2017</span>
+        </div>
         <article>
           <h2>Burger for Breakfast: How Early is too Early?</h2>
           <p>Mew York, MY—Interdum et malesuada fames ac ante ipsum primis in
@@ -68,9 +66,9 @@
             enim. Praesent eu nisl erat.
           </p>
         </article>
-        <article>
-          Research Shows Cameras Erase Memory
-        </article>
+        <div class="picleader" id="cameramemory">
+          <span>Research Shows Cameras Erase Memory</span>
+        </div>
       </div>
 
       <!-- Middle (medium) column -->
@@ -87,9 +85,9 @@
             blandit aliquam felis...
           </p>
         </article>
-        <article>
-          Cats in Control-Is It a Thing?
-        </article>
+        <div class="picleader" id="catscontrol">
+          <span>Cats in Control-Is It a Thing?</span>
+        </div>
         <article>
           <p>BROOKLYN, NY- In molestie nulla sodales sit amet. Proin vulputate,
             ipsum porta aliquam commodo, nunc nibh tincidunt lorem, vel consectetur
@@ -102,17 +100,23 @@
 
       <!-- Right (small) column -->
       <div class="column small">
+<!--        <img src="resources/images/img-news-bite.png" alt="Cookie with bite."> -->
         <img src="resources/images/img-news-bite.png" alt="Cookie with bite.">
-        <article>
+        <article #newsbites>
           <h2>NEWS BITES</h2>
-          <p>Cat Emoji Goes Viral Buy Youtube Views Home Business Advertising
-            Ideas Advertising Internet Online Illustration in Marketing Materials
-            Finally a Top Secret Way You Can
+          <div class="bitelist">
+            <span class="biteitem">Cat Emoji Goes Viral</span>
+            <span class="biteitem">Buy Youtube Views</span>
+            <span class="biteitem">Home Business Advertising Ideas</span>
+            <span class="biteitem">Advertising Internet Online</span>
+            <span class="biteitem">Illustration in Marketing Materials</span>
+            <span class="biteitem">Finally a Top Secret Way You Can</span>
+          </div>
           </p>
         </article>
       </div>
 
-    </section>
+    </div>
 
   </body>
 </html>
