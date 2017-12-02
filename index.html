@@ -13,28 +13,30 @@
   <body>
     <!-- ***** Header section is top menu bar of website -->
     <header>
+
       <div> <!-- left side -->
         <img src="resources/images/img-myt-logo.jpg" alt="My Times Logo">
         <span class="logotext">My Times</span>
       </div>
 
-      <nav id="topmenu"> <!-- right side -->
-
+      <nav> <!-- right side -->
           <span><a href="#">World</a></span>
           <span><a href="#">U.S.</a></span>
           <span><a href="#">Tech</a></span>
           <span><a href="#">Science</a></span>
-
       </nav>
+
     </header>
 
     <!-- ***** Main section with columns and articles -->
     <div class="maincontent">
-      <!-- Left (large) column -->
+
+      <!-- ***** Left (large) column -->
       <div class="column large">
         <div class="mainarticle picleader" id="motherphish">
           <span id="maintitle">Mother of Three Buys Tuna Steak at Phish Concert. Leaves, "Feeling Funny."</span>
         </div>
+
         <article>
           <p>
             MONUMENT VALLEY, AZ - Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -50,12 +52,14 @@
             sagittis neque. Nullam sit amet fringilla massa.
           </p>
         </article>
+
         <article class="Secondary">
           <h2>Orca Spends Vacation at Land World Puget </h2>
           <p>PUGET, SO - Sed felis elit, faucibus et ipsum vel, vehicula ultrices
             purus. Sed congue odio vitae malesuada rhoncus. Integer vitae nisi
             pulvinar ante accumsan...
         </article>
+
         <article class="Secondary">
           <h2>Burger for Breakfast: How Early is too Early?</h2>
           <p>Mew York, MY—Interdum et malesuada fames ac ante ipsum primis in
@@ -63,6 +67,7 @@
             enim. Praesent eu nisl erat.
           </p>
         </article>
+
         <div class="picleader" id="earthspins">
           <span>Earth Spins Backwards for 2017</span>
         </div>
@@ -70,9 +75,9 @@
         <div class="picleader" id="cameramemory">
           <span>Research Shows Cameras Erase Memory</span>
         </div>
-      </div>
+      </div> <!-- /div for class "column large" Left column -->
 
-      <!-- Middle (medium) column -->
+      <!-- ***** Middle (medium) column -->
       <div class="column medium">
         <article class="Secondary">
           <h2>FBI Finds Action Star Guilty of False Advertising</h2>
@@ -97,14 +102,14 @@
             Vivamus dignissim lacinia dolor, quis commodo tellus pellentesque in.
           </p>
         </article>
-      </div>
+      </div>  <!-- /div with class "column medium" - Middle column -->
 
-      <!-- Right (small) column -->
+      <!-- ***** Right (small) column -->
       <div class="column small">
-<!--        <img src="resources/images/img-news-bite.png" alt="Cookie with bite."> -->
         <img src="resources/images/img-news-bite.png" alt="Cookie with bite.">
+
         <article #newsbites>
-          <h2>NEWS BITES</h2>
+          <span class="bitetitle">NEWS BITES</span>
           <div class="bitelist">
             <span class="biteitem">Cat Emoji Goes Viral</span>
             <span class="biteitem">Buy Youtube Views</span>
@@ -113,11 +118,27 @@
             <span class="biteitem">Illustration in Marketing Materials</span>
             <span class="biteitem">Finally a Top Secret Way You Can</span>
           </div>
-          </p>
         </article>
-      </div>
+      </div> <!-- /div with class "column small" Right column -->
 
-    </div>
+    </div> <!-- End main content div -->
+
+    <!-- ***** Footer section -->
+    <footer>
+      <div>
+        <span class="footerlogo">MY Times</span>
+        <span class="footerbar">|</span>
+
+        <nav>
+          <span><a href="#">World</a></span>
+          <span><a href="#">U.S.</a></span>
+          <span><a href="#">Tech</a></span>
+          <span><a href="#">Science</a></span>
+        </nav>
+
+      </div>
+      <span>&copy; 2016, My Times (A Division of Codecademy bite)</span>
+    </footer>
 
   </body>
 </html>

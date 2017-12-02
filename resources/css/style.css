@@ -3,12 +3,21 @@
    J. Stuart Harris
  */
 
+/* General style code for the entire website - defaults
+ */
 body {
   font-family: Verdana;
   background-color: white;
   margin: 0 0;
 }
 
+a {
+  color: black;
+}
+
+
+/* Styles for the header subsections
+ */
 header {
   position: fixed;
   width: 100%;
@@ -17,45 +26,50 @@ header {
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
-  display: flex;
-  padding: 15px 40px;
+  display: inline-flex;
+  padding: 20px;
   border-bottom: 1px solid black;
   justify-content: space-between;
-  align-items: center;
+}
+
+.logotext {
+  padding: 0 16px;
+  color: MediumAquamarine;
 }
 
 header div {
+  margin-left: 30px;
   display: flex;
   align-items: center;
-  border: 1px solid black;
+  /* border: 1px solid violet; */
 }
 
-nav {
+header nav {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
 }
 
-nav span {
-  display: inline-block;
+header nav span {
   padding: 0 10px;
 }
 
-a {
-  color: black;
-}
 
+/* Styles for the main content section. Includes articles in columns.
+ */
 .maincontent {
-  border: 1px solid blue;
+  /* border: 1px solid blue;*/
   width: 1260px;
 	margin: 0 auto 78px auto;
   padding: 0;
   position: relative;
-  top: 100px;
+  top: 130px;
   display: flex;
   justify-content: flex-start;
   overflow: auto;
 }
 
 article {
-  border: 1px solid green;
   font-family: Georgia;
   font-size: 17px;
   color: black;
@@ -66,13 +80,8 @@ article {
   max-width:300px;
 }
 
-.logotext {
-  padding: 0 16px;
-  color: MediumAquamarine;
-}
-
 .column {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   flex-shrink: 0;
 }
@@ -83,7 +92,6 @@ article {
   justify-content: space-between;
 }
 
-
 .column.medium { /* medium */
   width: 300px;
   margin: 0 30px;
@@ -93,6 +101,7 @@ article {
 .column.small { /* small */
   width: 240px;
   flex-flow: column wrap;
+  justify-content: flex-start;
 }
 
 .picleader {
@@ -111,22 +120,24 @@ article {
   color: white;
 }
 
-#newsbites h2 {
+.bitetitle {
+  display: inline-block;
   font-size: 16px;
   font-weight: bold;
-  text-align: center;
+  margin: 36px auto 36px 62px;
 }
 
 .bitelist {
   background-color: WhiteSmoke;
-  display: block;
-  border-bottom: 1px solid black;
 }
 
 .biteitem {
+  display: block;
   font-family: Verdana;
   font-size: 12px;
-  color: blue;/*DimGray;*/
+  color: DimGray;
+  padding: 10px 25px 10px 16px;
+  border-bottom: 1px solid black;
 }
 
 #maintitle {
@@ -155,7 +166,51 @@ article {
   background-color: gray;
 }
 
-#topmenu {
+/* Styles for the footer subsections
+ */
+
+ footer {
+   position: relative;
+   top: 130px;
+   height: 300px;
+   display: flex;
+   flex-flow: column wrap;
+   align-content: center;
+   align-items: center;
+   justify-content: center;
+   background-color: MediumAquamarine;
+   margin: auto;
+   font-family: Verdana;
+   font-size: 12px;
+ }
+
+.footerlogo {
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  padding: 0 10px;
+}
+
+.footerbar {
+  font-family: Georgia;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  padding: 0 10px;
+}
+
+footer div {
   display: inline-flex;
-  align-content: flex-end;
+}
+footer div nav {
+  display: block;
+}
+
+footer div nav span {
+  padding: 0 15px;
+}
+
+footer span { /* copyright line */
+  padding: 15px 0;
 }
